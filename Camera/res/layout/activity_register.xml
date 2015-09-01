@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/loginbackground">
+
+    <Button
+        android:id="@+id/but_login2"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/register" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/but_registerback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/action_back" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/but_login2"
+        android:layout_alignRight="@+id/but_login2"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="57dp"
+        android:ems="10"
+        android:hint="@string/edit_name" />
+
+    <EditText
+        android:id="@+id/edit_registerpassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_name"
+        android:layout_alignRight="@+id/edit_name"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/edit_password" />
+
+    <EditText
+        android:id="@+id/edit_registerpassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_registerpassword1"
+        android:layout_alignRight="@+id/edit_registerpassword1"
+        android:layout_below="@+id/edit_registerpassword1"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/edit_passwordagain"
+        android:inputType="textPassword" />
+
+</RelativeLayout>
